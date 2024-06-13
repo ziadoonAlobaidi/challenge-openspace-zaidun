@@ -8,15 +8,6 @@ To help colleagues get to know each other better, we decided to reassign seats e
 This program automates the daily re-assignment of seats, ensuring a random and fair distribution.
 
 
-***Installation:***
-
-To get started, clone the repository and install the necessary dependencies.
-
-```sh
-git clone https://github.com/your-username/challenge-openspace-classifier.git
-cd challenge-openspace-classifier
-pip install -r requirements.txt
-
 
 ***Features:***
 
