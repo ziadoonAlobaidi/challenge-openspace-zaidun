@@ -68,6 +68,6 @@ class Table:
                 seat.set
 
 
-    def left_capacity():
+    def left_capacity(self):
         return sum(seat.free for seat in self.seats)
 
