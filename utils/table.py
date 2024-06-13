@@ -48,26 +48,21 @@ class Seat:
         status = "free" if self.free else "occupied"
         return f"Seat is {status}. Occupant: {self.occupant}"
 
-# Creating objects (with True and False) (to check both conditons)(for set_occupant):
-a = Seat(True, '')
-a2 = Seat(False, 'Johny')
+# I am gonna create table class in table.py
 
-# Creating objects (with True and False) (to check both conditons)(for remove_occupant):
-b = Seat(True, '')
-b2 = Seat(False, 'Johny')
+class Table:
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.seats = [Seat() for i in range(capacity)]
 
-# testing of set_occupant method.
-print(a2.set_occupant('John'))
-print(a.set_occupant('Boris'))
 
-print('\n')
-
-# testing of remove_occupant method.
-print(b.remove_occupant())
-print(b2.remove_occupant())
-
-print('\n')
-
-# testing of __str__ method.
-print(a)
-print(a2)
+    def has_free_spot(self):
+        for seat in self.seats:
+            if seat.free:
+                return True
+        return False         
+    
+    def assign_seat(name):
+        for seat in self.seats:
+            if seat.free:
+                seat.set
