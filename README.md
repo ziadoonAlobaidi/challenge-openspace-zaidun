@@ -1,5 +1,6 @@
 # challenge-openspace-classifier
 
+
 ***Description:***
 
 Welcome to the Openspace Classifier project! Our company recently moved to a new office 
@@ -8,13 +9,22 @@ To help colleagues get to know each other better, we decided to reassign seats e
 This program automates the daily re-assignment of seats, ensuring a random and fair distribution.
 
 
+***Installation:***
 
-***Features:***
+To get started, clone the repository and install the necessary dependencies:
 
-	•	Load a list of colleagues from an Excel file.
-	•	Randomly distribute people among the available tables and seats.
-	•	Display the seating arrangement.
-	•	Handle cases where there are more people than seats.
+git clone https://github.com/your-username/challenge-openspace-classifier.git
+cd challenge-openspace-classifier
+
+
+***Usage:***
+
+Ensure you have an Excel file with a list of colleagues.
+Run the main.py script with the filepath to the Excel file as an argument to organize 
+and display the seating arrangement:
+
+python main.py --file path/to/colleagues.xlsx
+
 
 ***Contributors:***
 
@@ -34,21 +44,4 @@ This program automates the daily re-assignment of seats, ensuring a random and f
 This project was developed as a team effort to enhance our skills in Python and project management. 
 We collaborated using a Trello board for task management and GitHub for version control.
 
-
-***Usage:***
-
-Ensure you have an Excel file with a list of colleagues.
-Run the main.py script with the filepath to the Excel file as an argument to organize 
-and display the seating arrangement.
-
-python main.py --file path/to/colleagues.xlsx
-
-***Installation:***
-
-To get started, clone the repository and install the necessary dependencies.
-
-```sh
-git clone https://github.com/your-username/challenge-openspace-classifier.git
-cd challenge-openspace-classifier
-pip install -r requirements.txt
 
