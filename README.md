@@ -13,8 +13,8 @@ This program automates the daily re-assignment of seats, ensuring a random and f
 
 To get started, clone the repository and install the necessary dependencies.
 
-**git clone https://github.com/your-username/challenge-openspace-classifier.git
-cd challenge-openspace-classifier**
+(git clone https://github.com/your-username/challenge-openspace-classifier.git
+cd challenge-openspace-classifier)
 
 
 ***Usage:***
@@ -23,7 +23,7 @@ Ensure you have an Excel file with a list of colleagues.
 Run the main.py script with the filepath to the Excel file as an argument to organize 
 and display the seating arrangement.
 
-python main.py --file path/to/colleagues.xlsx
+(python main.py --file path/to/colleagues.xlsx)
 
 
 ***Contributors:***
