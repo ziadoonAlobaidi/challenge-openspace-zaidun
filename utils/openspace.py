@@ -1,6 +1,7 @@
 from table import Table
 from table import Seat
 import numpy as np
+import openpyxl
 
 class Openspace :
 
@@ -26,16 +27,31 @@ class Openspace :
         """
         display the different tables and their occupants in a nice and readable way store(filename) store the repartition in an excel file
         """
+        n_tables = 0
         for table in self.tables :
+            n_tables +=1
+            print("Table number "+ n_tables + " has : ")
             for seat in table.seats :
                 print(seat.occupent)
                 occupant = seat.occupent
-               self.store(occupant)
+                self.store(occupant)
         
     def store(newRecord):
         """
         store(filename) store the repartition in an excel file
         """
-        with open('new.xlsx','w') as f :
-            f.write(newRecord)
+
+        # Create a new workbook
+        workbook = openpyxl.Workbook()
+
+        # Select the active sheet (default sheet created by openpyxl)
+        sheet = workbook.active
+
+        # Add a name to cell A1
+        sheet['A1'] = newRecord
+
+        # Save the workbook
+        workbook.save('names.xlsx')
+
+        print("Name saved successfully.")
 
