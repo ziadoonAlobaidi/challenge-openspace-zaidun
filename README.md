@@ -28,7 +28,7 @@ python main.py --file path/to/colleagues.xlsx
 
 ***Contributors:***
 
-	•	Team Member 1 - Mehmet Batar
+	•Team Member 1 - Mehmet Batar
 	•	Team Member 2 - Alisher Jardemaliyev
 	•	Team Member 3 – Ziadoon Alobaidi
 	•	Team Member 4 – Georgina Galicia
