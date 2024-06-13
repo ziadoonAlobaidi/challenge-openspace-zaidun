@@ -7,6 +7,17 @@ with an open space layout consisting of 6 tables, each with 4 seats, making a to
 To help colleagues get to know each other better, we decided to reassign seats every day. 
 This program automates the daily re-assignment of seats, ensuring a random and fair distribution.
 
+
+***Installation:***
+
+To get started, clone the repository and install the necessary dependencies.
+
+```sh
+git clone https://github.com/your-username/challenge-openspace-classifier.git
+cd challenge-openspace-classifier
+pip install -r requirements.txt
+
+
 ***Features:***
 
 	•	Load a list of colleagues from an Excel file.
@@ -16,10 +27,11 @@ This program automates the daily re-assignment of seats, ensuring a random and f
 
 ***Contributors:***
 
-	•	Team Member 1 - Mehmet
-	•	Team Member 2 - Alisher
-	•	Team Member 3 – Zaidoon
-	•	Team Member 4 – Zaidoon
+	•	Team Member 1 - Mehmet Batar
+	•	Team Member 2 - Alisher Jardemaliyev
+	•	Team Member 3 – Ziadoon Alobaidi
+	•	Team Member 4 – Georgina Galicia
+  
 
 ***Timeline:***
 
