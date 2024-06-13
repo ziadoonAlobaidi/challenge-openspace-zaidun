@@ -1,5 +1,6 @@
 # challenge-openspace-classifier
 
+
 ***Description:***
 
 Welcome to the Openspace Classifier project! Our company recently moved to a new office 
@@ -14,6 +15,7 @@ To get started, clone the repository and install the necessary dependencies.
 
 git clone https://github.com/your-username/challenge-openspace-classifier.git
 cd challenge-openspace-classifier
+
 
 ***Usage:***
 
@@ -40,6 +42,6 @@ python main.py --file path/to/colleagues.xlsx
 ***Personal Situation:***
 
 This project was developed as a team effort to enhance our skills in Python and project management. 
-We collaborated using a Trello board for task management and GitHub for version control. :)
+We collaborated using a Trello board for task management and GitHub for version control.
 
 
