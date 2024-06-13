@@ -13,8 +13,8 @@ This program automates the daily re-assignment of seats, ensuring a random and f
 
 To get started, clone the repository and install the necessary dependencies.
 
-"git clone https://github.com/your-username/challenge-openspace-classifier.git
-cd challenge-openspace-classifier"
+**"git clone https://github.com/your-username/challenge-openspace-classifier.git
+cd challenge-openspace-classifier"**
 
 
 ***Usage:***
