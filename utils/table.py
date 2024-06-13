@@ -1,13 +1,13 @@
 class Seat:
 
-    # Initializing 2 attributes (free, occupant)
+    # Initializing 2 attributes (free, occupant).
     def __init__(self, free=True, occupant=""):
-        # Should be boolean
+        # Should be boolean.
         self.free = free
-        # Should be string
+        # Should be string.
         self.occupant = occupant
 
-    # set_occupant method allows to assign a seat if it's free, otherwise returns message not free.
+    # set_occupant method allows to assign a seat if it's free, otherwise returns message.
     def set_occupant(self, name):
         if self.free:
             self.occupant = name
@@ -16,7 +16,7 @@ class Seat:
         else:
             return 'Seat is not free'
 
-    # remove_occupant method removes someone from a seat and returns name of the person
+    # remove_occupant method removes someone from a seat and returns name of the person.
     def remove_occupant(self):
 
         if self.free is False:
@@ -28,10 +28,21 @@ class Seat:
             return "Seat is already free"
 
 
-# Examples:
+# Creating objects (with True and False) (to check both conditons)(for set_occupant):
 a = Seat(True, '')
 a2 = Seat(False, 'Johny')
-print(a2.remove_occupant())
-print(a.remove_occupant())
+
+# Creating objects (with True and False) (to check both conditons)(for remove_occupant):
+b = Seat(True, '')
+b2 = Seat(False, 'Johny')
+
+# testing of set_occupant method.
 print(a2.set_occupant('John'))
-print(a.set_occupant('John'))
+print(a.set_occupant('Boris'))
+
+print('\n')
+
+# testing of remove_occupant method.
+print(b.remove_occupant())
+print(b2.remove_occupant())
+
