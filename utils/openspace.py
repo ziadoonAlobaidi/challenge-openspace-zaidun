@@ -6,26 +6,24 @@ import openpyxl
 class Openspace :
 
     def __init__(self, number_of_tables, seats_per_table):
-        self.tables = []
-        
         self.number_of_tables = number_of_tables
+        self.tables = [Table(seats_per_table) for i in range(number_of_tables)]
+        
 
-
-        for x in range(number_of_tables):
-            self.tables.append(Table(seats_per_table))
-
-    def organize(names) :
+    def organize(self,names) :
         """
         Randomly assign people to Seat objects in the different Table objects.
         """
         shuffleNames = np.random.shuffle(names)
         for name in shuffleNames :
-            Table.assign_seat(name)
+            msg = Table.assign_seat(name)
+        return msg
             
     
-    def display(): 
+    def display(self): 
         """
-        display the different tables and their occupants in a nice and readable way store(filename) store the repartition in an excel file
+        display the different tables and their occupants in a nice and readable way store(filename)
+          store the repartition(table 0 has mehmet + min + ...) in an excel file
         """
         n_tables = 0
         for table in self.tables :
@@ -36,7 +34,7 @@ class Openspace :
                 occupant = seat.occupent
                 self.store(occupant)
         
-    def store(newRecord):
+    def store(self, newRecord):
         """
         store(filename) store the repartition in an excel file
         """
