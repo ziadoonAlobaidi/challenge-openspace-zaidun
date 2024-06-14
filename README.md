@@ -4,8 +4,8 @@
 ***Description:***
 
 Welcome to the Openspace Classifier project! Our company recently moved to a new office 
-with an open space layout consisting of 6 tables, each with 4 seats, making a total of 24 seats. 
-To help colleagues get to know each other better, we decided to reassign seats every day. 
+with an open space layout consisting of 6 tables, each with 4 seats, making up 24 seats. 
+To help colleagues get to know each other better, we reassigned seats daily. 
 This program automates the daily re-assignment of seats, ensuring a random and fair distribution.
 
 
@@ -20,10 +20,10 @@ cd challenge-openspace-classifier
 ***Usage:***
 
 Ensure you have an Excel file with a list of colleagues.
-Run the main.py script with the filepath to the Excel file as an argument to organize 
+Run the main.py script with the file path to the Excel file as an argument to organize 
 and display the seating arrangement:
 
-python main.py --file path/to/colleagues.xlsx
+python main.py --file path/to/file.xlsx
 
 
 ***Contributors:***
@@ -41,7 +41,7 @@ python main.py --file path/to/colleagues.xlsx
 
 ***Personal Situation:***
 
-This project was developed as a team effort to enhance our skills in Python and project management. 
+This project was developed as a team effort to enhance our Python and project management skills. 
 We collaborated using a Trello board for task management and GitHub for version control.
 
 
