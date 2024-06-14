@@ -1,13 +1,13 @@
 class Seat:
     # Initializing 2 attributes (free, occupant).
-    def __init__(self, free=True, occupant=""):
+    def __init__(self, free: bool = True, occupant:str = "") -> None:
         # Should be boolean.
-        self.free = free
+        self.free: bool = free
         # Should be string.
-        self.occupant = occupant
+        self.occupant: str = occupant
 
     # set_occupant method allows to assign a seat if it's free, otherwise returns message.
-    def set_occupant(self, name):
+    def set_occupant(self, name:str) -> str:
         """
         Function that allows to assign a seat if it's free, otherwise returns message.
 
@@ -22,7 +22,7 @@ class Seat:
             return 'Seat is not free'
 
     # remove_occupant method removes someone from a seat and returns name of the person.
-    def remove_occupant(self):
+    def remove_occupant(self) -> str:
         """
         Function that allows to remove someone from a seat and returns name of the person.
 
@@ -38,14 +38,14 @@ class Seat:
             return "Seat is already free"
 
     # __str__ shows status of an object that belongs to the class (Seat).
-    def __str__(self):
+    def __str__(self) -> str:
         """
         Function that shows status of an object that belongs to the class (Seat).
 
         :param self:
         :return: Returns the status of a seat.
         """
-        status = "free" if self.free else "occupied"
+        status: str = "free" if self.free else "occupied"
         return f"Seat is {status}. Occupant: {self.occupant}"
 
 # I am gonna create table class in table.py
@@ -60,8 +60,8 @@ class Table:
         for seat in self.seats:
             if seat.free:
                 return True
-        return False         
-    
+        return False
+
     def assign_seat(name):
         for seat in self.seats:
             if seat.free:
