@@ -1,18 +1,19 @@
-# from table import Table, Seat
-# from openspace import Openspace
+from utils.openspace import Openspace
+
+from utils.table import Table, Seat
 import pandas as pd
-a = 6
-b = 4
 
-df_names = pd.read_excel('./utils/Example Excel Template.xlsx')
+n_tables = 6
+n_seats = 4
 
-names = df_names.iloc[1:25, 0]
+df = pd.read_excel('./utils/Example Excel Template.xlsx')
 
-a2 = []
+colleagues_list = df['Colleagues'].tolist()
 
-for x in names:
-    a2.append(x)
-print(a2)
+#print(colleagues_list)
 
+space= Openspace(n_tables,n_seats)
+
+print(space.organize(colleagues_list))
 
 
