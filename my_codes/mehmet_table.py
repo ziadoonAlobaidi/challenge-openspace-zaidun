@@ -4,14 +4,14 @@ from typing import Optional, List
 
 class Seat:
     # Initializing 2 attributes (free, occupant).
-    def __init__(self, free: bool = True, occupant:str = "") -> None:
+    def __init__(self, free=True, occupant=""):
         # Should be boolean.
-        self.free: bool = free
+        self.free = free
         # Should be string.
-        self.occupant: str = occupant
+        self.occupant = occupant
 
     # set_occupant method allows to assign a seat if it's free, otherwise returns message.
-    def set_occupant(self, name:str) -> str:
+    def set_occupant(self, name):
         """
         Function that allows to assign a seat if it's free, otherwise returns message.
 
@@ -26,7 +26,7 @@ class Seat:
             return 'Seat is not free'
 
     # remove_occupant method removes someone from a seat and returns name of the person.
-    def remove_occupant(self) -> str:
+    def remove_occupant(self):
         """
         Function that allows to remove someone from a seat and returns name of the person.
 
@@ -42,16 +42,15 @@ class Seat:
             return "Seat is already free"
 
     # __str__ shows status of an object that belongs to the class (Seat).
-    def __str__(self) -> str:
+    def __str__(self):
         """
         Function that shows status of an object that belongs to the class (Seat).
 
         :param self:
         :return: Returns the status of a seat.
         """
-        status: str = "free" if self.free else "occupied"
+        status = "free" if self.free else "occupied"
         return f"Seat is {status}. Occupant: {self.occupant}"
-
 
 # I am gonna create table class in table.py
 
