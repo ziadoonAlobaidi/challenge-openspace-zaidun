@@ -1,3 +1,4 @@
+
 class Seat:
     # Initializing 2 attributes (free, occupant).
     def __init__(self, free: bool = True, occupant:str = "") -> None:
