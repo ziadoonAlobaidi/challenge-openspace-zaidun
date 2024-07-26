@@ -1,6 +1,5 @@
 from .table import Table, Seat
 import numpy as np
-import openpyxl
 
 class Openspace:
 
