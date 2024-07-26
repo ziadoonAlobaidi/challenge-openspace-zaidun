@@ -1,4 +1,4 @@
-from table import Table, Seat
+from .table import Table, Seat
 import numpy as np
 import openpyxl
 
